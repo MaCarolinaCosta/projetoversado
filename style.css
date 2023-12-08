@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat'
+}
+
+.menu {
+    display: flex;
+    height: 32px;
+    align-items: center;
+    padding: 24px 80px;
+    gap: 27%;
+    font-size: 16px;
+}
+
+.lista {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    gap: 48px;
+    list-style: none;
+}
+
+header {
+    background: #DB009E;
+}
+
+footer {
+    background: #DB009E;
+    display: flex;
+    padding: 32px 80px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+
+.logo {
+    width: 90px;
+    height: 50px;
+}
+
+.nav {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.mapa {
+    height: 300px;
+}
+
+.Copyright {
+    list-style: none;
+    color: aliceblue;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 40px;
+    color: #DB009E;
+    margin: 3%;
+    text-decoration: underline;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+.faleconosco {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 260px;
+}
+
+.sac {
+    padding-bottom: 24px;
+}
+
+.icone {
+    padding-bottom: 24px;
+    height: 48px;
+    width: 48px;
+}
+
+.botao2 {
+    padding: 8px;
+    background: var(--colorido, linear-gradient(90deg, rgba(99, 205, 248, 0.70) 0%, rgba(120, 219, 159, 0.70) 22.01%, rgba(240, 205, 108, 0.70) 48.01%, rgba(219, 0, 158, 0.70) 76.02%, rgba(140, 99, 248, 0.70) 100.03%));
+}
+
+.social {
+    text-align: center;
+    padding: 35px;
+}
+
+.online {
+    padding: 50px 260px;
+}
+
+.borda {
+    border: solid 1px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.popup-caixa {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.popup-conteudo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(Imagens/popupimg.png);
+    color: black;
+    padding: 32px 180px 24px 24px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.popup-text {
+    color: black;
+    text-align: center;
+    font-weight: normal;
+    font-family: 'Montserrat';
+}
+
+.botao {
+    padding: 8px 16px 8px 16px;
+    border-radius: 10px;
+    background-color: #F562CC;
+    color: #FDF8F8;
+    margin-top: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.botao:hover {
+    opacity: 85%;
+}
+
+.detalhe {
+    width: 75%;
+}
+
+.form {
+    margin: 8px;
+    padding: 8px;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+}
+
+.fechar {
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    font-size: 32px;
+    cursor: pointer;
+    color: antiquewhite;
+}

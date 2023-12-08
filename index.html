@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Versado-Contato</title>
+    <link rel="stylesheet" href="faleconosco.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="menu">
+        <img class="logo" src="Imagens/Camaleao branco @2x 1.png" alt="logo">
+        <ul class="lista">
+            <li>
+                <a class="nav" href="">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a class="nav" href="">
+                    Quem Somos?
+                </a>
+            </li>
+            <li>
+                <a class="nav" href="">
+                    Loja Virtual
+                </a>
+            </li>
+            <li>
+                <a class="nav" href="">
+                    Fale Conosco
+                </a>
+            </li>
+        </ul>
+    </header>
+    <section>
+        <h1 class="titulo">Fale conosco</h1>
+        <div class="faleconosco">
+            <div class="sac">
+                <div class="borda">
+                    <h4 class="sac">SAC - Atendimento Telefônico</h4>
+                    <p class="sac">(11) 3436-9645</p>
+                    <p class="sac">Horário de atendimento:</p>
+                    <p class="sac">Seg. à Sex. das 8h às 18h</p>
+                    <div>
+                        <h4 class="sac">SAC - E-Mail</h4>
+                        <p class="sac">versado@ecommerce.com</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="endereco">
+                <img class="mapa" src="Imagens/mapa.png" alt="Mapa">
+                <p class="sac">Campinas - São Paulo</p>
+                <p class="sac">Avenida Doutor Moraes Salles, Centro, 01</p>
+                <p class="sac">CEP: 13010-000</p>
+            </div>
+        </div>
+        <div class="online">
+            <h3 class="sac">Atendimento online</h3>
+            <h4 class="sac">Escolha um assunto:</h4>
+            <form>
+                <select class="botao2">
+                    <option> Selecione o assunto </option>
+                    <option> Informações sobre pedido </option>
+                    <option> Dúvidas sobre o site </option>
+                    <option> Alteração de E-mail ou senha </option>
+                </select>
+            </form>
+        </div>
+        <div class="social">
+            <img class="icone" src="Imagens/_TikTok.png" alt="Tiktok">
+            <img class="icone" src="Imagens/_Twitter.png" alt="Twitter">
+            <img class="icone" src="Imagens/_Instagram.png" alt="Insta">
+            <p class="sac">@versadopapelaria</p>
+        </div>
+    </section>
+
+    <!-- Aqui começa o popup -->
+    <div class="popup-caixa" id="popup">
+        <div class="popup-conteudo">
+            <div class="detalhe">
+                <span class="fechar" onclick="fecharPopup()">&times;</span> <!-- Fechar popup com x -->
+                <h1 class="popup-text">Bem-vindo(a) à papelaria Versado</h1>
+                <p class="popup-text">Cadastre-se agora e ganhe 30% em sua primeira compra</p>
+                <form class="email">
+                    <input class="form" type="text" placeholder="Nome">
+                    <input class="form" type="text" placeholder="Digite seu email">
+                </form>
+                <button class="botao" onclick="fecharPopup()" ;>CADASTRAR</button> <!-- Fechar popup com botão -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+
+
+        agendarPopup();
+
+        function abrirPopup() {
+            popup.style.display = "block";
+        }
+
+        // Abrir popup depois de um tempo
+        function agendarPopup() {
+            setTimeout(function () {
+                abrirPopup();
+            }, 5000); // 5000 milissegundos = 5 segundos
+        }
+
+        // Abrir popup quando rolar a página
+        window.onscroll = function () {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                abrirPopup();
+            }
+        }
+
+        function fecharPopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "none";
+        }
+
+        // Fechar popup depois de um tempo
+        window.onload = function () {
+            setTimeout(fecharPopup, 20000);
+        }
+
+    </script>
+    <!-- Aqui termina o popup -->
+
+    <footer>
+        <img class="logo" src="Imagens/Camaleao branco @2x 1.png" alt="logo">
+        <p class="Copyright">Copyright © 2023 Versado | All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
